@@ -1,14 +1,18 @@
-const cart = document.getElementById('cart');
-var items = document.getElementById('item');
-var itemList = document.getElementById('item-list');
+// This verifies whether the whole page is loaded
+document.addEventListener('DOMContentLoaded', function initial() {
 
-console.log(cart,items,itemList)
+  // Use buttons
+  document.querySelector('#cart').addEventListener('click', () => {});
+  items = document.querySelectorAll('.item');
 
-cartEventListeners ();
-function cartEventListeners () {
-  items.addEventListener('click', buyItem());
-}
+  for (let i = 0; i < items.length; i++) {
+    items[i].addEventListener("click", () => buyItem(items[i]));
+  }
 
-function buyItem() {
-console.log(cart,items,itemList);
+  //document.querySelector('#item-list').addEventListener('click', () => {});
+})
+
+function buyItem(item) {
+  console.log(item);
+  // you can now do something else with this item, like adding them to the cart.html DOM
 }
