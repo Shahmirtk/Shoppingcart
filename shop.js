@@ -10,5 +10,5 @@ function cartEventListeners () {
 }
 
 function buyItem() {
-
+console.log(cart,items,itemList);
 }
