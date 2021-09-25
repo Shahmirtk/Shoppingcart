@@ -10,42 +10,61 @@
     <header class="main-header">
         <nav class="nav main-nav">
             <ul>
-                <li><a href="shop.html">HOME</a></li>
-                <li><a href="cart.html">GO TO CART</a></li>
+                <li><a href="#" id="shop-nav">HOME</a></li>
+                <li><a href="#" id="cart-nav">GO TO CART</a></li>
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>   
         <h2 class="brand-name">The Xee Shop</h2>
     </header>
 
-<div class="item-list">
-    <div class="item" id="item">
-        <span class="item-title">Shoes </span>
-        <img class="item-image" src="images/shoes.jpg">
-        <div class="item-details">
-            <span class="item-price">1400 Kr</span>
-            <button id="cart" class="add-to-cart"  type="button">ADD TO CART</button>
+    <div id="shop-view" style="display: block;">
+        <div class="item-list">
+            <div class="item" id="item">
+                <span class="item-title">Shoes </span>
+                <img class="item-image" src="images/shoes.jpg">
+                <div class="item-details">
+                    <span class="item-price">1400 Kr</span>
+                    <button id="cart" class="add-to-cart"  type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="item" id="item">
+                <span class="item-title">Shoes 2</span>
+                <img class="item-image" src="images/shoes2.jpg">
+                <div class="item-details">
+                    <span class="item-price">750 Kr</span>
+                    <button class="add-to-cart" id="cart" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <span class="item-title">T-shirt </span>
+                <img class="item-image" src="images/tshirt.jpg">
+                <div class="item-details">
+                    <span class="item-price">20 Kr</span>
+                    <button class="add-to-cart" id="cart" type="button">ADD TO CART</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="item" id="item">
-        <span class="item-title">Shoes 2</span>
-        <img class="item-image" src="images/shoes2.jpg">
-        <div class="item-details">
-            <span class="item-price">750 Kr</span>
-            <button class="add-to-cart" id="cart" type="button">ADD TO CART</button>
+    <div id="cart-view" style="display: none;">
+        <h2>CART</h2>
+        <div class="cart-row" id="cart-headings">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+
+        <div id="cart-items">
+            
+        </div>
+
+        <div class="cart-total">
+            <strong>Total</strong>
+            <span id="total-bill"></span>
         </div>
     </div>
-
-    <div class="item">
-        <span class="item-title">T-shirt </span>
-        <img class="item-image" src="images/tshirt.jpg">
-        <div class="item-details">
-            <span class="item-price">20 Kr</span>
-            <button class="add-to-cart" id="cart" type="button">ADD TO CART</button>
-        </div>
-    </div>
-
-</div>
   </body>
 </html>
